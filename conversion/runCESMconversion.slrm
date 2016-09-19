@@ -1,0 +1,11 @@
+#!/bin/bash -l
+
+#SBATCH -N 18
+#SBATCH -t 45
+#SBATCH -p regular
+#SBATCH --qos=premium
+
+bash
+module load python h5py-parallel
+srun -n 540 -u python-mpi -u ./CESM_converter.py
+python dump_CESM_metadata.py

@@ -1,0 +1,9 @@
+#!/bin/bash -l
+
+#SBATCH -N 40
+#SBATCH -t 15
+#SBATCH -p debug
+#SBATCH --qos=premium
+
+bash
+make cfsro

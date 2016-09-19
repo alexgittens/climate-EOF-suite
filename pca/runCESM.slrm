@@ -1,0 +1,9 @@
+#!/bin/bash -l
+
+#SBATCH -N 18
+#SBATCH -t 15
+#SBATCH -p regular
+#SBATCH --qos=premium
+
+bash
+make cesm

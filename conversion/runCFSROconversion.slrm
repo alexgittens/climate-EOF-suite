@@ -1,0 +1,11 @@
+#!/bin/bash -l
+
+#SBATCH -N 100
+#SBATCH -t 25
+#SBATCH -p regular
+#SBATCH --qos=premium
+
+bash
+module load python h5py-parallel
+srun -c 3 -n 1000 -u python-mpi -u ./CFSRO_converter.py
+python dump_CFSRO_metadata.py

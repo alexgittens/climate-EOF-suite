@@ -1,0 +1,6 @@
+refactor the pca code to check whether to compute CFSRO or CESM EOFs
+run end-to-end this repo of code
+check sanity of output
+elaborate on the conversion process and the unfolding to 3d to make it easy to see how to generalize for new datasets
+post to github
+point everyone to it
